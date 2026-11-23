@@ -40,6 +40,10 @@ jobs:
       - name: Report build failure
         if: failure()
         run: |
+          details=$(tail -n 60 "$RUNNER_TEMP/typepilot-gradle.log" | tr '\n' ' ')
+          details=${details//'%'/'%25'}
+          details=${details//$'\r'/'%0D'}
+          echo "::error::$details"
           echo '### Android APK build error details' >> "$GITHUB_STEP_SUMMARY"
           tail -n 100 "$RUNNER_TEMP/typepilot-gradle.log" >> "$GITHUB_STEP_SUMMARY"
       - name: Upload APK
