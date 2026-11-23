@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+icudtl.dat
+Data/icudtl.dat
+Data/custom-lessons.sqlite

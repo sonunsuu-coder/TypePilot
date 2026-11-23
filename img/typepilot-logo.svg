@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">TypePilot</title>
+  <defs>
+    <linearGradient id="g" x1="28" y1="32" x2="224" y2="225" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16c5d8"/><stop offset=".52" stop-color="#3978f6"/><stop offset="1" stop-color="#7555e8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="70" y1="64" x2="185" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/><stop offset="1" stop-color="#dff7ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#153b78" flood-opacity=".22"/></filter>
+  </defs>
+  <rect x="20" y="20" width="216" height="216" rx="62" fill="url(#g)" filter="url(#shadow)"/>
+  <path d="M66 83h94a12 12 0 0 1 12 12v10a12 12 0 0 1-12 12h-34v62a12 12 0 0 1-12 12h-12a12 12 0 0 1-12-12v-62H66a12 12 0 0 1-12-12V95a12 12 0 0 1 12-12Z" fill="url(#shine)"/>
+  <path d="M151 151c17-2 31-12 39-26 7-12 9-26 7-39 14 12 22 30 21 49-2 31-27 55-58 56-13 1-26-3-36-10 13-4 23-14 27-30Z" fill="#b9fbef" opacity=".96"/>
+  <path d="m186 52 27 4-14 23-4-14-14 6-7-9 14-6-2-4Z" fill="#fff"/>
+</svg>

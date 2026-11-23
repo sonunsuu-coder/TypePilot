@@ -1,0 +1,140 @@
+.completedWordWrong,
+.wordHighlightRed,
+.wordHighlight {
+  color: #dc2626 !important;
+  background-color: #fff !important;
+}
+
+.completedWordCorrect {
+  color: #16a34a !important;
+  background-color: #fff !important;
+}
+
+.topWordHighLight {
+  color: black  !important;
+  background-color: rgb(248, 212, 10)  !important;
+}
+
+.typepilot-submit-button {
+  display: inline-block;
+  margin: 14px 10px;
+  padding: 9px 22px;
+  border: 0;
+  border-radius: 5px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.typepilot-submit-button:hover {
+  background: #1d4ed8;
+}
+
+/* Keep practice lesson previews on one line without a horizontal scrollbar. */
+.el-table .el-table__body-wrapper .el-table__body td:nth-child(3) .cell {
+  display: block;
+  max-height: 1.5em;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.tp-lesson-toolbar {
+  min-height: 70px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #fff;
+  background: linear-gradient(105deg, #6075e8 0%, #7945a7 100%);
+  border-radius: 8px 8px 0 0;
+}
+.tp-lesson-toolbar + .el-table__header-wrapper .cell,
+.tp-lesson-toolbar ~ .el-table__header-wrapper .cell { white-space: nowrap; }
+
+.tp-lesson-title-group { display: flex; align-items: center; gap: 14px; }
+.tp-lesson-title-group strong { font-size: 15px; }
+.tp-lesson-language {
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: #45a951;
+  background: #f1fff1;
+  font-size: 11px;
+  font-weight: 700;
+}
+.tp-lesson-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 9px 15px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter .15s ease, transform .15s ease;
+}
+.tp-lesson-button:hover { filter: brightness(.95); transform: translateY(-1px); }
+.tp-lesson-button:disabled { opacity: .65; cursor: wait; }
+.tp-add-button { background: #319df3; }
+.tp-edit-button { margin-left: 8px; background: #3195ef; white-space: nowrap; }
+.tp-run-button { background: #58bd2d !important; border-color: #58bd2d !important; }
+.tp-actions-header { min-width: 170px; }
+.tp-actions-cell { white-space: nowrap; overflow: visible !important; }
+.tp-id-cell .cell { color: #60738d; }
+
+
+.tp-modal-backdrop {
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, .48);
+}
+.tp-lesson-dialog {
+  width: min(680px, 100%);
+  max-height: min(90vh, 900px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 20px 65px rgba(15, 23, 42, .24);
+}
+.tp-lesson-dialog h2 { margin: 0; color: #334e78; font-size: 22px; }
+.tp-lesson-dialog > p { margin: 7px 0 20px; color: #7a8798; font-size: 13px; }
+.tp-form-field { display: block; margin: 14px 0; color: #475569; font-size: 13px; font-weight: 600; }
+.tp-form-field > span { display: block; margin-bottom: 7px; }
+.tp-form-field input, .tp-form-field textarea, .tp-form-field select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9e0eb;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #26354a;
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.tp-form-field textarea { min-height: 190px; resize: vertical; }
+.tp-form-field input:focus, .tp-form-field textarea:focus, .tp-form-field select:focus {
+  outline: 2px solid rgba(49, 157, 243, .18);
+  border-color: #319df3;
+}
+.tp-form-status { min-height: 20px; color: #b45309; font-size: 13px; }
+.tp-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+.tp-cancel-button { color: #526174; background: #eef2f7; }
+.tp-save-button { background: #3195ef; }
+
+@media (max-width: 700px) {
+  .tp-lesson-toolbar { align-items: flex-start; flex-direction: column; }
+  .tp-edit-button { margin: 7px 0 0; }
+  .tp-actions-header { min-width: 110px; }
+}
