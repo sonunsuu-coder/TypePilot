@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/dispatch?__typepilot_route=:path*"
+    }
+  ],
+  "functions": {
+    "api/dispatch.py": {
+      "includeFiles": "{tgurudb.db,Data/api-cache/*.json}"
+    }
+  }
+}

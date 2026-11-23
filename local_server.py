@@ -12,7 +12,7 @@ from urllib.parse import parse_qs, urlparse
 
 ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / "Data" / "api-cache"
-CUSTOM_DB = ROOT / "Data" / "custom-lessons.sqlite"
+CUSTOM_DB = Path(os.environ.get("TYPEPILOT_CUSTOM_DB", ROOT / "Data" / "custom-lessons.sqlite"))
 
 
 def custom_db() -> sqlite3.Connection:
