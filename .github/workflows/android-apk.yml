@@ -36,7 +36,7 @@ jobs:
         run: npx cap sync android
       - name: Build debug APK
         working-directory: android
-        run: ./gradlew assembleDebug --stacktrace 2>&1 | tee "$RUNNER_TEMP/typepilot-gradle.log"
+        run: bash ./gradlew assembleDebug --stacktrace 2>&1 | tee "$RUNNER_TEMP/typepilot-gradle.log"
       - name: Report build failure
         if: failure()
         run: |
