@@ -36,7 +36,12 @@ jobs:
         run: npx cap sync android
       - name: Build debug APK
         working-directory: android
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace 2>&1 | tee "$RUNNER_TEMP/typepilot-gradle.log"
+      - name: Report build failure
+        if: failure()
+        run: |
+          echo '### Android APK build error details' >> "$GITHUB_STEP_SUMMARY"
+          tail -n 100 "$RUNNER_TEMP/typepilot-gradle.log" >> "$GITHUB_STEP_SUMMARY"
       - name: Upload APK
         uses: actions/upload-artifact@v7
         with:
