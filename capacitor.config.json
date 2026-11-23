@@ -1,0 +1,13 @@
+{
+  "appId": "in.typepilot.app",
+  "appName": "TypePilot",
+  "webDir": "www",
+  "server": {
+    "url": "https://type-pilot-io9h.vercel.app",
+    "cleartext": false,
+    "allowNavigation": ["type-pilot-io9h.vercel.app"]
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

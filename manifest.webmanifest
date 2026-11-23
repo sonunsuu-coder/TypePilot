@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "TypePilot Typing Tutor",
+  "short_name": "TypePilot",
+  "description": "Typing lessons and practice in multiple Indian languages.",
+  "start_url": "/#/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f4f7fb",
+  "theme_color": "#2876c7",
+  "icons": [
+    {
+      "src": "/img/typepilot-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/typepilot-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

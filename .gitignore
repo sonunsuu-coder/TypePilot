@@ -3,3 +3,11 @@ __pycache__/
 icudtl.dat
 Data/icudtl.dat
 Data/custom-lessons.sqlite
+node_modules/
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/
+android/captures/
+android/.idea/
+www/
