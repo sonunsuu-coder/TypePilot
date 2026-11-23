@@ -5,7 +5,7 @@ The Android project is generated with Capacitor and opens the production TypePil
 ## Build a debug APK
 
 1. Install Android Studio and Android SDK Platform 35 (including Build Tools 35.0.0).
-2. Install JDK 17 or newer supported by the installed Android Gradle Plugin.
+2. Install JDK 21 (required by the generated Capacitor Android project).
 3. From this folder run `npm install`, `npx cap sync android`, then `cd android` and `gradlew.bat assembleDebug`.
 4. The APK is created at `android/app/build/outputs/apk/debug/app-debug.apk`.
 
