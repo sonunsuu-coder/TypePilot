@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'android/**'
+      - 'www/**'
       - 'capacitor.config.json'
       - 'package.json'
       - 'package-lock.json'
